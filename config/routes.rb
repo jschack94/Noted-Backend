@@ -1,3 +1,10 @@
+  
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get '/persist', to: 'tokens#persist'
+  
+  resources :tokens, only: [:create]
+  resources :users  
+  resources :projects
+  resources :lists
+  resources :tasks
 end

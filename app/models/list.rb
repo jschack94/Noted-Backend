@@ -1,2 +1,5 @@
 class List < ApplicationRecord
-end
+    belongs_to :project
+    has_many :tasks
+    has_one :user, through: :project
+  end

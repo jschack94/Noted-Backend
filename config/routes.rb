@@ -1,4 +1,3 @@
-  
 Rails.application.routes.draw do
   get '/persist', to: 'tokens#persist'
   

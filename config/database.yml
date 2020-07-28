@@ -8,26 +8,25 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: note
+  database: jonathanschack
   pool: 5
-  username: note
-  password: note
+  username: jonathanschack
+ 
   timeout: 5000
 
 
 
 production:
   <<: *default
-  database: note
-  username: note
-  password: note
+  database: jonathanschack
+  username: jonathanschack
+ 
 
 
   test:
   adapter: postgresql
   encoding: unicode
-  database: note
+  database: jonathanschack
   pool: 5
-  username: note
-  password: note
+  username: jonathanschack
   timeout: 5000
